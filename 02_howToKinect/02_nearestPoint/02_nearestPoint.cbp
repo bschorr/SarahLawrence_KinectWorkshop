@@ -1,0 +1,278 @@
+<?xml version="1.0"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="02_nearestPoint" />
+		<Option makefile="makefile" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="addons\;src\;" />
+		<Build>
+			<Target title="release">
+				<Option output="bin\$(PROJECT_NAME)" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin" />
+				<Option object_output="obj\Release" />
+				<Option external_deps="..\..\..\libs\openFrameworksCompiled\lib\win_cb\openFrameworks.lib;" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="../../../libs/openFrameworksCompiled/lib/win_cb/openFrameworks.lib" />
+				</Linker>
+			</Target>
+			<Target title="debug">
+				<Option output="bin\$(PROJECT_NAME)_DEBUG" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin" />
+				<Option object_output="obj\Debug\" />
+				<Option external_deps="..\..\..\libs\openFrameworksCompiled\lib\win_cb\openFrameworksDebug.lib;" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add option="../../../libs/openFrameworksCompiled/lib/win_cb/openFrameworksDebug.lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wno-multichar" />
+			<Add directory="..\..\..\libs\glu\include" />
+			<Add directory="..\..\..\libs\freetype\include" />
+			<Add directory="..\..\..\libs\freetype\include\freetype2" />
+			<Add directory="..\..\..\libs\FreeImage\include" />
+			<Add directory="..\..\..\libs\quicktime\include" />
+			<Add directory="..\..\..\libs\rtAudio\include" />
+			<Add directory="..\..\..\libs\fmodex\include" />
+			<Add directory="..\..\..\libs\videoInput\include" />
+			<Add directory="..\..\..\libs\glew\include" />
+			<Add directory="..\..\..\libs\glut\include" />
+			<Add directory="..\..\..\libs\glfw\include" />
+			<Add directory="..\..\..\libs\openFrameworks" />
+			<Add directory="..\..\..\libs\openFrameworks\3d" />
+			<Add directory="..\..\..\libs\openFrameworks\app" />
+			<Add directory="..\..\..\libs\openFrameworks\communication" />
+			<Add directory="..\..\..\libs\openFrameworks\events" />
+			<Add directory="..\..\..\libs\openFrameworks\gl" />
+			<Add directory="..\..\..\libs\openFrameworks\graphics" />
+			<Add directory="..\..\..\libs\openFrameworks\math" />
+			<Add directory="..\..\..\libs\openFrameworks\sound" />
+			<Add directory="..\..\..\libs\openFrameworks\types" />
+			<Add directory="..\..\..\libs\openFrameworks\utils" />
+			<Add directory="..\..\..\libs\openFrameworks\video" />
+			<Add directory="..\..\..\libs\poco\include" />
+			<Add directory="..\..\..\libs\tess2\include" />
+			<Add directory="..\..\..\libs\cairo\include\cairo" />
+			<Add directory="../../../addons/ofxKinect/libs" />
+			<Add directory="../../../addons/ofxKinect/libs/libfreenect" />
+			<Add directory="../../../addons/ofxKinect/libs/libfreenect/include" />
+			<Add directory="../../../addons/ofxKinect/libs/libfreenect/platform" />
+			<Add directory="../../../addons/ofxKinect/libs/libfreenect/platform/windows" />
+			<Add directory="../../../addons/ofxKinect/libs/libfreenect/platform/windows/inf" />
+			<Add directory="../../../addons/ofxKinect/libs/libfreenect/platform/windows/inf/xbox nui audio" />
+			<Add directory="../../../addons/ofxKinect/libs/libfreenect/platform/windows/inf/xbox nui audio/amd64" />
+			<Add directory="../../../addons/ofxKinect/libs/libfreenect/platform/windows/inf/xbox nui audio/ia64" />
+			<Add directory="../../../addons/ofxKinect/libs/libfreenect/platform/windows/inf/xbox nui audio/license" />
+			<Add directory="../../../addons/ofxKinect/libs/libfreenect/platform/windows/inf/xbox nui audio/license/libusb-win32" />
+			<Add directory="../../../addons/ofxKinect/libs/libfreenect/platform/windows/inf/xbox nui audio/x86" />
+			<Add directory="../../../addons/ofxKinect/libs/libfreenect/platform/windows/inf/xbox nui camera" />
+			<Add directory="../../../addons/ofxKinect/libs/libfreenect/platform/windows/inf/xbox nui camera/amd64" />
+			<Add directory="../../../addons/ofxKinect/libs/libfreenect/platform/windows/inf/xbox nui camera/ia64" />
+			<Add directory="../../../addons/ofxKinect/libs/libfreenect/platform/windows/inf/xbox nui camera/license" />
+			<Add directory="../../../addons/ofxKinect/libs/libfreenect/platform/windows/inf/xbox nui camera/license/libusb-win32" />
+			<Add directory="../../../addons/ofxKinect/libs/libfreenect/platform/windows/inf/xbox nui camera/x86" />
+			<Add directory="../../../addons/ofxKinect/libs/libfreenect/platform/windows/inf/xbox nui motor" />
+			<Add directory="../../../addons/ofxKinect/libs/libfreenect/platform/windows/inf/xbox nui motor/amd64" />
+			<Add directory="../../../addons/ofxKinect/libs/libfreenect/platform/windows/inf/xbox nui motor/ia64" />
+			<Add directory="../../../addons/ofxKinect/libs/libfreenect/platform/windows/inf/xbox nui motor/license" />
+			<Add directory="../../../addons/ofxKinect/libs/libfreenect/platform/windows/inf/xbox nui motor/license/libusb-win32" />
+			<Add directory="../../../addons/ofxKinect/libs/libfreenect/platform/windows/inf/xbox nui motor/x86" />
+			<Add directory="../../../addons/ofxKinect/libs/libfreenect/platform/windows/libusb10emu" />
+			<Add directory="../../../addons/ofxKinect/libs/libfreenect/platform/windows/libusb10emu/libusb-1.0" />
+			<Add directory="../../../addons/ofxKinect/libs/libfreenect/src" />
+			<Add directory="../../../addons/ofxKinect/libs/libusb-1.0" />
+			<Add directory="../../../addons/ofxKinect/libs/libusb-win32" />
+			<Add directory="../../../addons/ofxKinect/libs/libusb-win32/include" />
+			<Add directory="../../../addons/ofxKinect/libs/libusb-win32/lib" />
+			<Add directory="../../../addons/ofxKinect/libs/libusb-win32/lib/win_cb" />
+			<Add directory="../../../addons/ofxKinect/src" />
+			<Add directory="../../../addons/ofxKinect/src/extra" />
+			<Add directory="src" />
+		</Compiler>
+		<Linker>
+			<Add library="..\..\..\libs\FreeImage\lib\win_cb\FreeImage.lib" />
+			<Add library="..\..\..\libs\rtAudio\lib\win_cb\librtaudio.a" />
+			<Add library="..\..\..\libs\quicktime\lib\win_cb\qtmlClient.lib" />
+			<Add library="..\..\..\libs\cairo\lib\win_cb\libcairo.a" />
+			<Add library="..\..\..\libs\cairo\lib\win_cb\libpixman-1.a" />
+			<Add library="..\..\..\libs\freetype\lib\win_cb\libfreetype.a" />
+			<Add library="..\..\..\libs\glut\lib\win_cb\libglut.a" />
+			<Add library="..\..\..\libs\glfw\lib\win_cb\libglfw3.a" />
+			<Add library="..\..\..\libs\videoInput\lib\win_cb\videoInputLib.a" />
+			<Add library="..\..\..\libs\fmodex\lib\win_cb\libfmodex.a" />
+			<Add library="..\..\..\libs\glew\lib\win_cb\glew32s.lib" />
+			<Add library="..\..\..\libs\glu\lib\win_cb\glu32.lib" />
+			<Add library="..\..\..\libs\poco\lib\win_cb\libPocoNetSSL.a" />
+			<Add library="..\..\..\libs\poco\lib\win_cb\libPocoCrypto.a" />
+			<Add library="..\..\..\libs\poco\lib\win_cb\libPocoNet.a" />
+			<Add library="..\..\..\libs\poco\lib\win_cb\libPocoUtil.a" />
+			<Add library="..\..\..\libs\poco\lib\win_cb\libPocoXML.a" />
+			<Add library="..\..\..\libs\poco\lib\win_cb\libPocoFoundation.a" />
+			<Add library="..\..\..\libs\openssl\lib\win_cb\libssl.a" />
+			<Add library="..\..\..\libs\openssl\lib\win_cb\libcrypto.a" />
+			<Add library="..\..\..\libs\tess2\lib\win_cb\libtess2.a" />
+			<Add library="opengl32" />
+			<Add library="gdi32" />
+			<Add library="msimg32" />
+			<Add library="glu32" />
+			<Add library="dsound" />
+			<Add library="winmm" />
+			<Add library="dxguid" />
+			<Add library="strmbase" />
+			<Add library="strmiids" />
+			<Add library="z" />
+			<Add library="uuid" />
+			<Add library="ole32" />
+			<Add library="oleaut32" />
+			<Add library="setupapi" />
+			<Add library="wsock32" />
+			<Add library="ws2_32" />
+			<Add library="Iphlpapi" />
+			<Add library="Comdlg32" />
+			<Add library="../../../addons/ofxKinect/libs/libusb-win32/lib/win_cb/libusb.lib" />
+			<Add library="../../../addons/ofxKinect/libs/libusb-win32/lib/win_cb/libusbd.lib" />
+		</Linker>
+		<ExtraCommands>
+			<Add after="xcopy /e /i /y &quot;$(PROJECT_DIR)..\..\..\export\win_cb\*.dll&quot;  &quot;$(PROJECT_DIR)bin&quot;" />
+			<Add after="cmd /c if not exist &quot;$(PROJECT_DIR)bin/data&quot; mkdir &quot;$(PROJECT_DIR)bin/data&quot;" />
+			<Mode after="always" />
+		</ExtraCommands>
+		<Unit filename="icon.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="src\main.cpp">
+			<Option virtualFolder="src" />
+		</Unit>
+		<Unit filename="src\ofApp.cpp">
+			<Option virtualFolder="src" />
+		</Unit>
+		<Unit filename="src\ofApp.h">
+			<Option virtualFolder="src" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+		<Unit filename="../../../addons/ofxKinect/src/extra/ofxKinectExtras.cpp">
+			<Option virtualFolder="addons/ofxKinect/src/extra" />
+		</Unit>
+		<Unit filename="../../../addons/ofxKinect/src/extra/ofxKinectExtras.h">
+			<Option virtualFolder="addons/ofxKinect/src/extra" />
+		</Unit>
+		<Unit filename="../../../addons/ofxKinect/src/ofxBase3DVideo.h">
+			<Option virtualFolder="addons/ofxKinect/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxKinect/src/ofxKinect.cpp">
+			<Option virtualFolder="addons/ofxKinect/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxKinect/src/ofxKinect.h">
+			<Option virtualFolder="addons/ofxKinect/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxKinect/libs/libfreenect/include/libfreenect.h">
+			<Option virtualFolder="addons/ofxKinect/libs/libfreenect/include" />
+		</Unit>
+		<Unit filename="../../../addons/ofxKinect/libs/libfreenect/include/libfreenect_audio.h">
+			<Option virtualFolder="addons/ofxKinect/libs/libfreenect/include" />
+		</Unit>
+		<Unit filename="../../../addons/ofxKinect/libs/libfreenect/include/libfreenect_registration.h">
+			<Option virtualFolder="addons/ofxKinect/libs/libfreenect/include" />
+		</Unit>
+		<Unit filename="../../../addons/ofxKinect/libs/libfreenect/platform/windows/libusb10emu/libusb-1.0/failguard.cpp">
+			<Option virtualFolder="addons/ofxKinect/libs/libfreenect/platform/windows/libusb10emu/libusb-1.0" />
+		</Unit>
+		<Unit filename="../../../addons/ofxKinect/libs/libfreenect/platform/windows/libusb10emu/libusb-1.0/failguard.h">
+			<Option virtualFolder="addons/ofxKinect/libs/libfreenect/platform/windows/libusb10emu/libusb-1.0" />
+		</Unit>
+		<Unit filename="../../../addons/ofxKinect/libs/libfreenect/platform/windows/libusb10emu/libusb-1.0/libusb.h">
+			<Option virtualFolder="addons/ofxKinect/libs/libfreenect/platform/windows/libusb10emu/libusb-1.0" />
+		</Unit>
+		<Unit filename="../../../addons/ofxKinect/libs/libfreenect/platform/windows/libusb10emu/libusb-1.0/libusbemu.cpp">
+			<Option virtualFolder="addons/ofxKinect/libs/libfreenect/platform/windows/libusb10emu/libusb-1.0" />
+		</Unit>
+		<Unit filename="../../../addons/ofxKinect/libs/libfreenect/platform/windows/libusb10emu/libusb-1.0/libusbemu_internal.h">
+			<Option virtualFolder="addons/ofxKinect/libs/libfreenect/platform/windows/libusb10emu/libusb-1.0" />
+		</Unit>
+		<Unit filename="../../../addons/ofxKinect/libs/libfreenect/platform/windows/libusb10emu/libusb-1.0/libusbemu_threads.h">
+			<Option virtualFolder="addons/ofxKinect/libs/libfreenect/platform/windows/libusb10emu/libusb-1.0" />
+		</Unit>
+		<Unit filename="../../../addons/ofxKinect/libs/libfreenect/platform/windows/libusb10emu/libusb-1.0/libusbemu_threads_win32.h">
+			<Option virtualFolder="addons/ofxKinect/libs/libfreenect/platform/windows/libusb10emu/libusb-1.0" />
+		</Unit>
+		<Unit filename="../../../addons/ofxKinect/libs/libfreenect/platform/windows/stdbool.h">
+			<Option virtualFolder="addons/ofxKinect/libs/libfreenect/platform/windows" />
+		</Unit>
+		<Unit filename="../../../addons/ofxKinect/libs/libfreenect/platform/windows/unistd.h">
+			<Option virtualFolder="addons/ofxKinect/libs/libfreenect/platform/windows" />
+		</Unit>
+		<Unit filename="../../../addons/ofxKinect/libs/libfreenect/src/audio.c">
+			<Option virtualFolder="addons/ofxKinect/libs/libfreenect/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxKinect/libs/libfreenect/src/cameras.c">
+			<Option virtualFolder="addons/ofxKinect/libs/libfreenect/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxKinect/libs/libfreenect/src/cameras.h">
+			<Option virtualFolder="addons/ofxKinect/libs/libfreenect/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxKinect/libs/libfreenect/src/core.c">
+			<Option virtualFolder="addons/ofxKinect/libs/libfreenect/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxKinect/libs/libfreenect/src/flags.c">
+			<Option virtualFolder="addons/ofxKinect/libs/libfreenect/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxKinect/libs/libfreenect/src/flags.h">
+			<Option virtualFolder="addons/ofxKinect/libs/libfreenect/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxKinect/libs/libfreenect/src/freenect_internal.h">
+			<Option virtualFolder="addons/ofxKinect/libs/libfreenect/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxKinect/libs/libfreenect/src/keep_alive.c">
+			<Option virtualFolder="addons/ofxKinect/libs/libfreenect/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxKinect/libs/libfreenect/src/keep_alive.h">
+			<Option virtualFolder="addons/ofxKinect/libs/libfreenect/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxKinect/libs/libfreenect/src/loader.c">
+			<Option virtualFolder="addons/ofxKinect/libs/libfreenect/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxKinect/libs/libfreenect/src/loader.h">
+			<Option virtualFolder="addons/ofxKinect/libs/libfreenect/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxKinect/libs/libfreenect/src/registration.c">
+			<Option virtualFolder="addons/ofxKinect/libs/libfreenect/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxKinect/libs/libfreenect/src/registration.h">
+			<Option virtualFolder="addons/ofxKinect/libs/libfreenect/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxKinect/libs/libfreenect/src/tilt.c">
+			<Option virtualFolder="addons/ofxKinect/libs/libfreenect/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxKinect/libs/libfreenect/src/usb_libusb10.c">
+			<Option virtualFolder="addons/ofxKinect/libs/libfreenect/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxKinect/libs/libfreenect/src/usb_libusb10.h">
+			<Option virtualFolder="addons/ofxKinect/libs/libfreenect/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxKinect/libs/libusb-1.0/include/libusb-1.0/libusb.h">
+			<Option virtualFolder="addons/ofxKinect/libs/libusb-1.0/include/libusb-1.0" />
+		</Unit>
+		<Unit filename="../../../addons/ofxKinect/libs/libusb-win32/include/lusb0_usb.h">
+			<Option virtualFolder="addons/ofxKinect/libs/libusb-win32/include" />
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
